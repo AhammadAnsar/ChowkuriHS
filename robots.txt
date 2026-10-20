@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chowkurihs.edu.bd/sitemap.xml
