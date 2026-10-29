@@ -1,6 +1,6 @@
-# চৌকুড়ী উচ্চ বিদ্যালয় (CHOWKURI HIGH SCHOOL) — অফিশিয়াল ওয়েবসাইট রিপোজিটোরি
+# চৌকুড়ী উচ্চ বিদ্যালয় (Chowkuri High School) — অফিশিয়াল ওয়েবসাইট রিপোজিটোরি
 
-এই ফোল্ডারটিতে **চৌকুড়ী উচ্চ বিদ্যালয়** (EIIN: 105876)-এর সিএমএস থেকে জেনারেটকৃত সম্পূর্ণ **Ready-to-Push** মাল্টি-পেজ ওয়েবসাইট, সকল ছবি, আইকন, টেক্সট এবং ডাটা সংরক্ষিত রয়েছে।
+এই ফোল্ডারটিতে **চৌকুড়ী উচ্চ বিদ্যালয়** (EIIN: 106086)-এর সিএমএস থেকে জেনারেটকৃত সম্পূর্ণ **Ready-to-Push** মাল্টি-পেজ ওয়েবসাইট, সকল ছবি, আইকন, টেক্সট এবং ডাটা সংরক্ষিত রয়েছে।
 
 ---
 
@@ -11,7 +11,7 @@
 ```bash
 git init
 git add .
-git commit -m "Initial commit: CHOWKURI HIGH SCHOOL Official Website"
+git commit -m "Initial commit: Chowkuri High School Official Website"
 git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 git push -u origin main

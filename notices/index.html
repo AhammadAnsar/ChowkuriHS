@@ -3,46 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ডিজিটাল নোটিশ বোর্ড ও বিজ্ঞপ্তি | চৌকুড়ী উচ্চ বিদ্যালয় (CHOWKURI HIGH SCHOOL)</title>
-  <meta name="description" content="চৌকুড়ী উচ্চ বিদ্যালয়ের সকল জরুরি নোটিশ, ভর্তি বিজ্ঞপ্তি, পরীক্ষার রুটিন ও ফলাফল।" />
-  <meta name="keywords" content="চৌকুড়ী উচ্চ বিদ্যালয়, Chowkuri High School, Nangalkot, Cumilla, Gunabati, Dhalua, BANBEIS, শিক্ষা প্রতিষ্ঠান, কুমিল্লা বোর্ড" />
-  <link rel="canonical" href="https://chowkurihs.edu.bd/notices/" />
+  <title>ডিজিটাল নোটিশ বোর্ড ও বিজ্ঞপ্তি | চৌকুড়ী উচ্চ বিদ্যালয় (Chowkuri High School)</title>
+  <meta name="description" content="চৌকুড়ী উচ্চ বিদ্যালয়-এর সকল জরুরি নোটিশ, ভর্তি বিজ্ঞপ্তি, পরীক্ষার রুটিন ও ফলাফল।" />
+  <meta name="keywords" content="" />
+  <link rel="canonical" href="https://www.chowkurihs.edu.bd/notices/" />
   <link rel="icon" href="../assets/icons/favicon.png" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="ডিজিটাল নোটিশ বোর্ড ও বিজ্ঞপ্তি | চৌকুড়ী উচ্চ বিদ্যালয় (CHOWKURI HIGH SCHOOL)" />
-  <meta property="og:description" content="চৌকুড়ী উচ্চ বিদ্যালয়ের সকল জরুরি নোটিশ, ভর্তি বিজ্ঞপ্তি, পরীক্ষার রুটিন ও ফলাফল।" />
-  <meta property="og:url" content="https://chowkurihs.edu.bd/notices/" />
-  <meta property="og:image" content="../assets/icons/logo.png" />
+  <meta property="og:title" content="ডিজিটাল নোটিশ বোর্ড ও বিজ্ঞপ্তি | চৌকুড়ী উচ্চ বিদ্যালয় (Chowkuri High School)" />
+  <meta property="og:description" content="চৌকুড়ী উচ্চ বিদ্যালয়-এর সকল জরুরি নোটিশ, ভর্তি বিজ্ঞপ্তি, পরীক্ষার রুটিন ও ফলাফল।" />
+  <meta property="og:url" content="https://www.chowkurihs.edu.bd/notices/" />
+  <meta property="og:image" content="../assets/images/og-image.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body, h1, h2, h3, h4, h5, h6 { font-family: 'Noto Serif Bengali', Georgia, serif; }
-    body { line-height: 1.75; }
+    :root {
+      --theme-primary: #006A4E;
+      --theme-primary-dark: #004734;
+      --theme-accent: #D97706;
+      --theme-font: 'Noto Serif Bengali', Georgia, serif;
+    }
+    html, body {
+      overflow-x: hidden;
+      max-width: 100vw;
+      font-family: var(--theme-font);
+      line-height: 1.75;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--theme-font);
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+    p, span, a, li, td, th, div {
+      overflow-wrap: break-word;
+    }
     p { line-height: 1.82; margin-bottom: 0.65em; }
     p:last-child { margin-bottom: 0; }
+    img, svg, video, canvas, iframe { max-width: 100%; }
+    .smart-table-scroll {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .section-tone-white { background-color: #ffffff; }
+    .section-tone-slate { background-color: #f8fafc; }
+    .section-tone-emerald { background-color: #f0fdf4; }
+    .section-tone-amber { background-color: #fffbeb; }
     @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
-    .animate-marquee { display: inline-block; white-space: nowrap; animation: marquee 34s linear infinite; }
+    .animate-marquee { display: inline-block; white-space: nowrap; animation: marquee 60s linear infinite; }
+    @keyframes marqueeInfinite { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    .animate-marquee-infinite { display: inline-flex; width: max-content; white-space: nowrap; animation: marqueeInfinite 60s linear infinite; }
+    .animate-marquee-infinite:hover { animation-play-state: paused; }
+    @keyframes verticalNoticeScroll { 0% { transform: translateY(0); } 100% { transform: translateY(-50%); } }
+    .animate-vertical-notice { animation: verticalNoticeScroll 45s linear infinite; }
+    .animate-vertical-notice:hover { animation-play-state: paused; }
     @keyframes staffScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
     .animate-staff-scroll { display: flex; width: max-content; animation: staffScroll 42s linear infinite; }
     .animate-staff-scroll:hover { animation-play-state: paused; }
   </style>
+  
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     "name": "চৌকুড়ী উচ্চ বিদ্যালয়",
-    "alternateName": "CHOWKURI HIGH SCHOOL",
-    "url": "https://chowkurihs.edu.bd/notices/",
-    "foundingDate": "1993-01-01",
+    "alternateName": "Chowkuri High School",
+    "url": "https://www.chowkurihs.edu.bd/notices/",
+    "foundingDate": "01/01/1993",
     "email": "hmchowkuri93@gmail.com",
-    "telephone": "01819844473",
+    "telephone": "01309106086",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "CHOWKURI (চৌকুড়ী), DHALUA (ঢালুয়া), Ward 9",
-      "addressLocality": "NANGALKOT (নাঙ্গলকোট)",
-      "addressRegion": "CUMILLA (কুমিল্লা)",
+      "streetAddress": "চৌকুড়ী, ঢালুয়া, Ward 9",
+      "addressLocality": "নাঙ্গলকোট",
+      "addressRegion": "কুমিল্লা",
       "postalCode": "3583",
       "addressCountry": "BD"
     }
@@ -50,43 +86,58 @@
   </script>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col antialiased">
-  <!-- Up-Scroll Sticky Header -->
+  
   <header id="site-sticky-header" class="w-full bg-white border-b border-slate-200 sticky top-0 z-40 transition-transform duration-300">
-    <!-- Mobile Top Bar (Date Left, EMS Right) -->
+    
     <div style="background-color: #004734" class="md:hidden text-emerald-50 text-[11px] py-1.5 px-3 border-b border-emerald-800/60">
       <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
-        <span class="truncate text-emerald-100 font-medium">📅 মঙ্গলবার, ২০ অক্টোবর, ২০২৬</span>
+        <span class="truncate text-emerald-100 font-medium">📅 বৃহস্পতিবার, ২৯ অক্টোবর, ২০২৬</span>
         <a href="https://biddalok.nicetrix.com/app" target="_blank" rel="noopener noreferrer" class="px-2.5 py-0.5 rounded-md bg-amber-400 text-slate-950 font-bold text-[10.5px] shrink-0">🔒 ইএমএস লগইন</a>
       </div>
     </div>
 
-    <!-- Desktop Top Bar -->
+    
     <div style="background-color: #004734" class="hidden md:block text-emerald-50 text-xs py-1.5 px-4 border-b border-emerald-800/60">
       <div class="max-w-7xl mx-auto flex justify-between items-center">
         <div class="flex items-center gap-4">
-          <span>ইআইআইএন: <strong class="text-white">১০৫৮৭৬</strong></span>
+          <span>ইআইআইএন: <strong class="text-white">১০৬০৮৬</strong></span>
           <span>|</span>
           <span>বিদ্যালয় কোড: <strong class="text-white">৩৫৮৩</strong></span>
           <span>|</span>
           <span>স্থাপিত: <strong class="text-white">০১/০১/১৯৯৩ খ্রি.</strong></span>
         </div>
         <div class="flex items-center gap-4">
-          <span>ফোন: ০১৮১৯৮৪৪৪৭৩</span>
+          
+          <span>ফোন: ০১৩০৯১০৬০৮৬</span>
           <span>ইমেইল: hmchowkuri93@gmail.com</span>
         </div>
       </div>
     </div>
 
-    <!-- Main Identity Header (Unclipped Bangla Title) -->
-    <div style="background-color: #ffffff" class="py-3.5 md:py-4 px-4 border-b border-slate-100">
-      <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+    
+    <div class="relative bg-gradient-to-r from-emerald-50/70 via-slate-50/90 to-amber-50/50 py-3.5 md:py-4 px-4 border-b border-emerald-900/10 overflow-hidden">
+      
+      <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-30 z-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300" preserveAspectRatio="none">
+        <defs>
+          <pattern id="static-header-lattice" width="60" height="60" patternUnits="userSpaceOnUse">
+            <path d="M30 0 L60 30 L30 60 L0 30 Z" fill="none" stroke="#006A4E" stroke-width="0.8" stroke-opacity="0.18" />
+            <circle cx="30" cy="30" r="12" fill="none" stroke="#006A4E" stroke-width="0.6" stroke-opacity="0.15" />
+            <circle cx="30" cy="30" r="3" fill="#006A4E" fill-opacity="0.22" />
+            <circle cx="0" cy="0" r="4" fill="#D97706" fill-opacity="0.18" />
+            <circle cx="60" cy="60" r="4" fill="#D97706" fill-opacity="0.18" />
+            <path d="M30 8 L37 23 L52 30 L37 37 L30 52 L23 37 L8 30 L23 23 Z" fill="none" stroke="#D97706" stroke-width="0.5" stroke-opacity="0.15" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#static-header-lattice)" />
+      </svg>
+      <div class="relative z-10 max-w-7xl mx-auto flex items-center justify-between gap-4">
         <a href="../index.html" class="flex items-center gap-3.5 md:gap-4 min-w-0 flex-1">
-          <div class="w-11 h-11 md:w-16 md:h-16 rounded-full bg-emerald-50 border-2 border-[#006A4E]/30 p-1 flex items-center justify-center shrink-0 overflow-hidden">
+          <div style="width:72px;height:72px" class="rounded-full bg-emerald-50 border-2 border-[#006A4E]/30 p-1 flex items-center justify-center shrink-0 overflow-hidden">
             <img src="../assets/icons/logo.png" alt="চৌকুড়ী উচ্চ বিদ্যালয়" class="w-full h-full object-contain rounded-full" />
           </div>
           <div class="min-w-0 flex-1 text-center md:text-left py-0.5">
-            <h1 class="text-base sm:text-xl md:text-3xl lg:text-[40px] font-extrabold text-[#00523B] pt-1.5 pb-1 leading-[1.42] tracking-tight">চৌকুড়ী উচ্চ বিদ্যালয়</h1>
-            <p class="text-[11px] sm:text-xs md:text-sm text-slate-600 font-medium leading-normal truncate">ডাকঘর: GUNABATI (গুণবতী) (৩৫৮৩), NANGALKOT (নাঙ্গলকোট), CUMILLA (কুমিল্লা)</p>
+            <h1 class="text-lg sm:text-xl md:text-3xl lg:text-[40px] font-extrabold text-[#00523B] pt-1.5 pb-1 leading-[1.35] tracking-tight break-words">চৌকুড়ী উচ্চ বিদ্যালয়</h1>
+            <p class="text-[11px] sm:text-xs md:text-sm text-slate-600 font-medium leading-snug break-words">ডাকঘর: মন্নারা (৩৫৮৩), নাঙ্গলকোট, কুমিল্লা</p>
           </div>
         </a>
 
@@ -101,47 +152,113 @@
       </div>
     </div>
 
-    <!-- Desktop Navigation Bar -->
+    
+
+    
     <div style="background-color: #006A4E" class="hidden md:block text-white">
       <div class="max-w-7xl mx-auto px-4 py-1.5">
-        <nav class="flex items-center justify-between gap-1">
-          <a href="../index.html" class="px-3 py-2 text-sm font-bold rounded-lg whitespace-nowrap transition-colors text-white hover:bg-white/15">হোম</a>
-            <a href="../about/index.html" class="px-3 py-2 text-sm font-bold rounded-lg whitespace-nowrap transition-colors text-white hover:bg-white/15">পরিচিতি</a>
-            <a href="../notices/index.html" class="px-3 py-2 text-sm font-bold rounded-lg whitespace-nowrap transition-colors bg-amber-400 text-slate-950">নোটিশ বোর্ড</a>
-            <a href="../teachers/index.html" class="px-3 py-2 text-sm font-bold rounded-lg whitespace-nowrap transition-colors text-white hover:bg-white/15">শিক্ষক ও কর্মচারী</a>
-            <a href="../committee/index.html" class="px-3 py-2 text-sm font-bold rounded-lg whitespace-nowrap transition-colors text-white hover:bg-white/15">পরিচালনা পর্ষদ</a>
-            <a href="../students/index.html" class="px-3 py-2 text-sm font-bold rounded-lg whitespace-nowrap transition-colors text-white hover:bg-white/15">শিক্ষার্থী তথ্য</a>
-            <a href="../academics/index.html" class="px-3 py-2 text-sm font-bold rounded-lg whitespace-nowrap transition-colors text-white hover:bg-white/15">একাডেমিক</a>
-            <a href="../facilities/index.html" class="px-3 py-2 text-sm font-bold rounded-lg whitespace-nowrap transition-colors text-white hover:bg-white/15">অবকাঠামো ও সহশিক্ষা</a>
-            <a href="../charter/index.html" class="px-3 py-2 text-sm font-bold rounded-lg whitespace-nowrap transition-colors text-white hover:bg-white/15">সিটিজেন চার্টার</a>
-            <a href="../gallery/index.html" class="px-3 py-2 text-sm font-bold rounded-lg whitespace-nowrap transition-colors text-white hover:bg-white/15">গ্যালারি</a>
-            <a href="../admission/index.html" class="px-3 py-2 text-sm font-bold rounded-lg whitespace-nowrap transition-colors text-white hover:bg-white/15">ভর্তি আবেদন</a>
-            <a href="../contact/index.html" class="px-3 py-2 text-sm font-bold rounded-lg whitespace-nowrap transition-colors text-white hover:bg-white/15">যোগাযোগ</a>
+        <nav class="flex flex-wrap items-center justify-start gap-1 lg:gap-2">
+          <a href="../index.html" class="px-3 py-1.5 text-sm font-bold rounded-lg whitespace-nowrap transition-colors text-white hover:bg-white/15">প্রচ্ছদ</a>
+            
+        <div class="relative group">
+          <a href="../about/index.html" class="flex items-center gap-1 px-3 py-1.5 text-sm font-bold rounded-lg whitespace-nowrap transition-colors cursor-pointer text-white hover:bg-white/15">
+            <span>প্রতিষ্ঠান পরিচিতি</span>
+            <span class="text-xs">▾</span>
+          </a>
+          <div class="absolute left-0 top-full hidden group-hover:block pt-1 z-50">
+            <div class="w-56 bg-slate-900/95 backdrop-blur-md text-white rounded-xl shadow-2xl border border-white/10 p-1.5 space-y-0.5">
+              <a href="../about/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">পরিচিতি ও ইতিহাস</a>
+              <a href="../committee/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">পরিচালনা পর্ষদ</a>
+              <a href="../former-committee/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">সাবেক পরিচালনা পর্ষদ</a>
+              <a href="../charter/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">সিটিজেন চার্টার</a>
+              <a href="../facilities/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">অবকাঠামো</a>
+            </div>
+          </div>
+        </div>
+            <a href="../teachers/index.html" class="px-3 py-1.5 text-sm font-bold rounded-lg whitespace-nowrap transition-colors text-white hover:bg-white/15">শিক্ষক ও কর্মচারী</a>
+            
+        <div class="relative group">
+          <a href="../academics/index.html" class="flex items-center gap-1 px-3 py-1.5 text-sm font-bold rounded-lg whitespace-nowrap transition-colors cursor-pointer text-white hover:bg-white/15">
+            <span>একাডেমিক</span>
+            <span class="text-xs">▾</span>
+          </a>
+          <div class="absolute left-0 top-full hidden group-hover:block pt-1 z-50">
+            <div class="w-56 bg-slate-900/95 backdrop-blur-md text-white rounded-xl shadow-2xl border border-white/10 p-1.5 space-y-0.5">
+              <a href="../academic/overview/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">একাডেমিক পরিচিতি</a>
+              <a href="../academic/classes/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">শ্রেণি ও বিভাগ</a>
+              <a href="../academic/curriculum/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">বিষয় ও শিক্ষাক্রম</a>
+              <a href="../academic/syllabus/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">সিলেবাস</a>
+              <a href="../academic/routine/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">ক্লাস রুটিন</a>
+              <a href="../academic/exam-routine/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">পরীক্ষার সময়সূচি</a>
+              <a href="../academic/calendar/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">একাডেমিক ক্যালেন্ডার</a>
+              <a href="../academic/assessment/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">পরীক্ষা ও মূল্যায়ন</a>
+              <a href="../academic/results/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">পরীক্ষার ফলাফল</a>
+              <a href="../academic/resources/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">পাঠ্যপুস্তক ও শিক্ষা উপকরণ</a>
+              <a href="../academic/policies/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">একাডেমিক নীতিমালা</a>
+              <a href="../academic/documents/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">একাডেমিক ডকুমেন্ট</a>
+              <a href="../fees/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">ফি ও বেতন</a>
+            </div>
+          </div>
+        </div>
+            <a href="../admission/index.html" class="px-3 py-1.5 text-sm font-bold rounded-lg whitespace-nowrap transition-colors text-white hover:bg-white/15">ভর্তি তথ্য</a>
+            <a href="../online-school/index.html" class="px-3 py-1.5 text-sm font-bold rounded-lg whitespace-nowrap transition-colors text-white hover:bg-white/15">অনলাইন স্কুল</a>
+            <a href="../notices/index.html" class="px-3 py-1.5 text-sm font-bold rounded-lg whitespace-nowrap transition-colors bg-amber-400 text-slate-950 font-bold">নোটিশ বোর্ড</a>
+            
+        <div class="relative group">
+          <a href="../students/index.html" class="flex items-center gap-1 px-3 py-1.5 text-sm font-bold rounded-lg whitespace-nowrap transition-colors cursor-pointer text-white hover:bg-white/15">
+            <span>শিক্ষার্থী কর্নার</span>
+            <span class="text-xs">▾</span>
+          </a>
+          <div class="absolute left-0 top-full hidden group-hover:block pt-1 z-50">
+            <div class="w-56 bg-slate-900/95 backdrop-blur-md text-white rounded-xl shadow-2xl border border-white/10 p-1.5 space-y-0.5">
+              <a href="../students/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">শিক্ষার্থী তথ্য</a>
+              <a href="../meritorious/index.html" class="block px-3 py-2 text-xs font-semibold rounded-lg transition-colors text-slate-200 hover:bg-white/15 hover:text-white">কৃতি শিক্ষার্থী</a>
+            </div>
+          </div>
+        </div>
+            <a href="../gallery/index.html" class="px-3 py-1.5 text-sm font-bold rounded-lg whitespace-nowrap transition-colors text-white hover:bg-white/15">ফটো গ্যালারি</a>
+            <a href="../contact/index.html" class="px-3 py-1.5 text-sm font-bold rounded-lg whitespace-nowrap transition-colors text-white hover:bg-white/15">যোগাযোগ</a>
         </nav>
       </div>
     </div>
 
-    <!-- Mobile Navigation Drawer -->
+    
     <div id="mobile-nav-drawer" class="hidden md:hidden bg-white border-t border-slate-200 px-4 py-3 shadow-lg space-y-2">
       <div class="grid grid-cols-2 gap-1.5">
-        <a href="../index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">হোম</a>
-          <a href="../about/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">পরিচিতি</a>
-          <a href="../notices/index.html" class="px-3 py-2 text-xs font-bold rounded-lg bg-emerald-900 text-white">নোটিশ বোর্ড</a>
-          <a href="../teachers/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">শিক্ষক ও কর্মচারী</a>
+        <a href="../index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">প্রচ্ছদ</a>
+          <a href="../about/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">পরিচিতি ও ইতিহাস</a>
           <a href="../committee/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">পরিচালনা পর্ষদ</a>
-          <a href="../students/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">শিক্ষার্থী তথ্য</a>
+          <a href="../former-committee/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">সাবেক পরিচালনা পর্ষদ</a>
+          <a href="../teachers/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">শিক্ষক ও কর্মচারী</a>
           <a href="../academics/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">একাডেমিক</a>
-          <a href="../facilities/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">অবকাঠামো ও সহশিক্ষা</a>
+          <a href="../academic/overview/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">একাডেমিক পরিচিতি</a>
+          <a href="../academic/classes/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">শ্রেণি ও বিভাগ</a>
+          <a href="../academic/curriculum/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">বিষয় ও শিক্ষাক্রম</a>
+          <a href="../academic/syllabus/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">সিলেবাস</a>
+          <a href="../academic/routine/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">ক্লাস রুটিন</a>
+          <a href="../academic/exam-routine/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">পরীক্ষার সময়সূচি</a>
+          <a href="../academic/calendar/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">একাডেমিক ক্যালেন্ডার</a>
+          <a href="../academic/assessment/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">পরীক্ষা ও মূল্যায়ন</a>
+          <a href="../academic/results/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">পরীক্ষার ফলাফল</a>
+          <a href="../academic/resources/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">পাঠ্যপুস্তক ও শিক্ষা উপকরণ</a>
+          <a href="../academic/policies/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">একাডেমিক নীতিমালা</a>
+          <a href="../academic/documents/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">একাডেমিক ডকুমেন্ট</a>
+          <a href="../fees/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">ফি ও বেতন</a>
+          <a href="../admission/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">ভর্তি তথ্য</a>
+          <a href="../online-school/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">অনলাইন স্কুল</a>
+          <a href="../notices/index.html" class="px-3 py-2 text-xs font-bold rounded-lg bg-emerald-900 text-white">নোটিশ বোর্ড</a>
+          <a href="../students/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">শিক্ষার্থী তথ্য</a>
+          <a href="../meritorious/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">কৃতি শিক্ষার্থী</a>
           <a href="../charter/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">সিটিজেন চার্টার</a>
-          <a href="../gallery/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">গ্যালারি</a>
-          <a href="../admission/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">ভর্তি আবেদন</a>
+          <a href="../facilities/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">অবকাঠামো</a>
+          <a href="../gallery/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">ফটো গ্যালারি</a>
           <a href="../contact/index.html" class="px-3 py-2 text-xs font-bold rounded-lg text-slate-700 hover:bg-slate-100">যোগাযোগ</a>
       </div>
       <a href="https://biddalok.nicetrix.com/app" target="_blank" rel="noopener noreferrer" class="block w-full text-center py-2 bg-amber-400 text-slate-950 font-bold text-xs rounded-lg">🔒 ইএমএস লগইন ↗</a>
     </div>
   </header>
 
-  <!-- Main Page Content -->
+  
   <main class="flex-1">
     
       
@@ -151,7 +268,7 @@
             <a href="../index.html" class="hover:underline">হোম</a> &nbsp;/&nbsp; <span class="text-amber-300 font-semibold">ডিজিটাল নোটিশ বোর্ড ও বিজ্ঞপ্তি</span>
           </div>
           <h2 class="text-xl md:text-2xl font-bold">ডিজিটাল নোটিশ বোর্ড ও বিজ্ঞপ্তি</h2>
-          <p class="text-xs text-emerald-200 mt-1">চৌকুড়ী উচ্চ বিদ্যালয়ের সকল জরুরি নোটিশ, ভর্তি বিজ্ঞপ্তি, পরীক্ষার রুটিন ও ফলাফল।</p>
+          <p class="text-xs text-emerald-200 mt-1">চৌকুড়ী উচ্চ বিদ্যালয়-এর সকল জরুরি নোটিশ, ভর্তি বিজ্ঞপ্তি, পরীক্ষার রুটিন ও ফলাফল।</p>
         </div>
       </div>
       <section class="max-w-7xl mx-auto px-4 py-10">
@@ -164,43 +281,126 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           
-            <div data-notice-cat="admission" data-notice-title="২০২৬ শিক্ষাবর্ষে ৬ষ্ঠ থেকে ৯ম শ্রেণিতে ভর্তি সংক্রান্ত চূড়ান্ত বিজ্ঞপ্তি" data-notice-date="২০-১০-২০২৬" data-notice-cat-label="admission" data-notice-content="এতদ্বারা অত্র বিদ্যালয়ের শিক্ষার্থী ও সম্মানিত অভিভাবকদের অবগতির জন্য জানানো যাচ্ছে যে, ২০২৬ শিক্ষাবর্ষে ৬ষ্ঠ হতে ৯ম শ্রেণিতে সীমিত সংখ্যক আসনে ভর্তি কার্যক্রম চলমান রয়েছে। আগ্রহী অভিভাবকগণ অনলাইন পোর্টালের মাধ্যমে অথবা বিদ্যালয় কার্যালয় হতে নির্ধারিত ফরম সংগ্রহ করে আগামী ৩১শে ডিসেম্বরের মধ্যে আবেদন জমা দেওয়ার জন্য অনুরোধ করা হলো।" class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs cursor-pointer hover:border-emerald-600 transition-all">
+            <div data-notice-cat="admission" data-notice-title="২০২৬ শিক্ষাবর্ষে ৬ষ্ঠ থেকে ৯ম শ্রেণিতে ভর্তি সংক্রান্ত চূড়ান্ত বিজ্ঞপ্তি ও নীতিমালা" data-notice-date="২০-১০-২০২৬" data-notice-cat-label="admission" data-notice-content="এতদ্বারা অত্র বিদ্যালয়ের শিক্ষার্থী, সম্মানিত অভিভাবক ও সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, শিক্ষা মন্ত্রণালয়ের বেসরকারি মাধ্যমিক বিদ্যালয় ভর্তি নীতিমালা অনুযায়ী ২০২৬ শিক্ষাবর্ষে ৬ষ্ঠ হতে ৯ম শ্রেণিতে সীমিত সংখ্যক শূন্য আসনে ভর্তি কার্যক্রম চলমান রয়েছে।
+
+১. আবেদনের যোগ্যতা: জাতীয় শিক্ষাক্রম ও সরকারি বয়স নীতিমালা অনুযায়ী ৬ষ্ঠ শ্রেণিতে ভর্তির জন্য প্রার্থীর বয়স ১১+ বছর হতে হবে।
+২. প্রয়োজনীয় কাগজপত্র: অনলাইন জন্ম নিবন্ধন সনদের ফটোকপি, পূর্ববর্তী শ্রেণির মূল্যায়ন/প্রত্যয়নপত্র, পিতা ও মাতার জাতীয় পরিচয়পত্রের কপি এবং ২ কপি পাসপোর্ট সাইজের রঙিন ছবি।
+৩. ফরম বিতরণ ও জমাদান: আগ্রহী অভিভাবকগণ অত্র ওয়েবসাইটের অনলাইন ভর্তি পোর্টালের (/admission/) মাধ্যমে অথবা বিদ্যালয় অফিস কক্ষ হতে নির্ধারিত ফরম (মূল্য ২০০/- টাকা) সংগ্রহ করে আগামী ৩০-১১-২০২৬ তারিখের মধ্যে জমা দেওয়ার জন্য অনুরোধ করা হলো।" class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs cursor-pointer hover:border-emerald-600 transition-all">
               <div class="flex justify-between text-xs text-slate-500 mb-2">
                 <span class="font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">admission</span>
                 <span class="font-mono">২০-১০-২০২৬</span>
               </div>
-              <h3 class="font-bold text-slate-900 text-base mb-2">২০২৬ শিক্ষাবর্ষে ৬ষ্ঠ থেকে ৯ম শ্রেণিতে ভর্তি সংক্রান্ত চূড়ান্ত বিজ্ঞপ্তি</h3>
-              <p class="text-xs text-slate-600 leading-relaxed">এতদ্বারা অত্র বিদ্যালয়ের শিক্ষার্থী ও সম্মানিত অভিভাবকদের অবগতির জন্য জানানো যাচ্ছে যে, ২০২৬ শিক্ষাবর্ষে ৬ষ্ঠ হতে ৯ম শ্রেণিতে সীমিত সংখ্যক আসনে ভর্তি কার্যক্রম চলমান রয়েছে। আগ্রহী অভিভাবকগণ অনলাইন পোর্টালের মাধ্যমে অথবা বিদ্যালয় কার্যালয় হতে নির্ধারিত ফরম সংগ্রহ করে আগামী ৩১শে ডিসেম্বরের মধ্যে আবেদন জমা দেওয়ার জন্য অনুরোধ করা হলো।</p>
+              <h3 class="font-bold text-slate-900 text-base mb-2">২০২৬ শিক্ষাবর্ষে ৬ষ্ঠ থেকে ৯ম শ্রেণিতে ভর্তি সংক্রান্ত চূড়ান্ত বিজ্ঞপ্তি ও নীতিমালা</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">এতদ্বারা অত্র বিদ্যালয়ের শিক্ষার্থী, সম্মানিত অভিভাবক ও সংশ্লিষ্ট সকলের অবগতির জন্য জানানো যাচ্ছে যে, শিক্ষা মন্ত্রণালয়ের বেসরকারি মাধ্যমিক বিদ্যালয় ভর্তি নীতিমালা অনুযায়ী ২০২৬ শিক্ষাবর্ষে ৬ষ্ঠ হতে ৯ম শ্রেণিতে সীমিত সংখ্যক শূন্য আসনে ভর্তি কার্যক্রম চলমান রয়েছে।
+
+১. আবেদনের যোগ্যতা: জাতীয় শিক্ষাক্রম ও সরকারি বয়স নীতিমালা অনুযায়ী ৬ষ্ঠ শ্রেণিতে ভর্তির জন্য প্রার্থীর বয়স ১১+ বছর হতে হবে।
+২. প্রয়োজনীয় কাগজপত্র: অনলাইন জন্ম নিবন্ধন সনদের ফটোকপি, পূর্ববর্তী শ্রেণির মূল্যায়ন/প্রত্যয়নপত্র, পিতা ও মাতার জাতীয় পরিচয়পত্রের কপি এবং ২ কপি পাসপোর্ট সাইজের রঙিন ছবি।
+৩. ফরম বিতরণ ও জমাদান: আগ্রহী অভিভাবকগণ অত্র ওয়েবসাইটের অনলাইন ভর্তি পোর্টালের (/admission/) মাধ্যমে অথবা বিদ্যালয় অফিস কক্ষ হতে নির্ধারিত ফরম (মূল্য ২০০/- টাকা) সংগ্রহ করে আগামী ৩০-১১-২০২৬ তারিখের মধ্যে জমা দেওয়ার জন্য অনুরোধ করা হলো।</p>
             </div>
-            <div data-notice-cat="exam" data-notice-title="বার্ষিক পরীক্ষা ২০২৫ এর ফলাফল প্রকাশ ও কৃতি সংবর্ধনা" data-notice-date="১৮-১০-২০২৬" data-notice-cat-label="exam" data-notice-content="অত্র বিদ্যালয়ের ২০২৫ সালের ৬ষ্ঠ থেকে ১০ম শ্রেণির শিক্ষার্থীদের বার্ষিক পরীক্ষার ফলাফল আগামী ২৪শে অক্টোবর সকাল ১০:০০ ঘটিকায় অত্র বিদ্যালয়ের শিক্ষক মিলনায়তনে আনুষ্ঠানিকভাবে প্রকাশ করা হবে। একই সাথে কৃতি শিক্ষার্থীদের মেধা পুরস্কার প্রদান করা হবে।" class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs cursor-pointer hover:border-emerald-600 transition-all">
+            <div data-notice-cat="exam" data-notice-title="বার্ষিক পরীক্ষা ও সামষ্টিক মূল্যায়ন ২০২৬-এর চূড়ান্ত সময়সূচি ও আসন বিন্যাস প্রকাশ" data-notice-date="১৮-১০-২০২৬" data-notice-cat-label="exam" data-notice-content="অত্র বিদ্যালয়ের ৬ষ্ঠ থেকে ৯ম শ্রেণির সকল শিক্ষার্থীর অবগতির জন্য জানানো যাচ্ছে যে, ২০২৬ শিক্ষাবর্ষের বার্ষিক পরীক্ষা আগামী ২৮-১১-২০২৬ তারিখ রোজ শনিবার সকাল ১০:০০ ঘটিকা হতে দুপুর ১:০০ ঘটিকা পর্যন্ত নির্ধারিত রুটিন অনুযায়ী অনুষ্ঠিত হবে।
+
+• প্রবেশপত্র সংগ্রহ: আগামী ২০-১১-২০২৬ তারিখের মধ্যে বিদ্যালয়ের যাবতীয় বকেয়া বেতন ও পরীক্ষার ফি পরিশোধপূর্বক শ্রেণি শিক্ষকের নিকট হতে প্রবেশপত্র সংগ্রহ করতে হবে।
+• পরীক্ষার শৃঙ্খলা: পরীক্ষা শুরুর অন্তত ৩০ মিনিট পূর্বে নির্ধারিত কক্ষে আসন গ্রহণ করতে হবে এবং বিদ্যালয়ের নির্ধারিত ইউনিফর্ম ও আইডি কার্ড পরিধান করা বাধ্যতামূলক।" class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs cursor-pointer hover:border-emerald-600 transition-all">
               <div class="flex justify-between text-xs text-slate-500 mb-2">
                 <span class="font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">exam</span>
                 <span class="font-mono">১৮-১০-২০২৬</span>
               </div>
-              <h3 class="font-bold text-slate-900 text-base mb-2">বার্ষিক পরীক্ষা ২০২৫ এর ফলাফল প্রকাশ ও কৃতি সংবর্ধনা</h3>
-              <p class="text-xs text-slate-600 leading-relaxed">অত্র বিদ্যালয়ের ২০২৫ সালের ৬ষ্ঠ থেকে ১০ম শ্রেণির শিক্ষার্থীদের বার্ষিক পরীক্ষার ফলাফল আগামী ২৪শে অক্টোবর সকাল ১০:০০ ঘটিকায় অত্র বিদ্যালয়ের শিক্ষক মিলনায়তনে আনুষ্ঠানিকভাবে প্রকাশ করা হবে। একই সাথে কৃতি শিক্ষার্থীদের মেধা পুরস্কার প্রদান করা হবে।</p>
+              <h3 class="font-bold text-slate-900 text-base mb-2">বার্ষিক পরীক্ষা ও সামষ্টিক মূল্যায়ন ২০২৬-এর চূড়ান্ত সময়সূচি ও আসন বিন্যাস প্রকাশ</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">অত্র বিদ্যালয়ের ৬ষ্ঠ থেকে ৯ম শ্রেণির সকল শিক্ষার্থীর অবগতির জন্য জানানো যাচ্ছে যে, ২০২৬ শিক্ষাবর্ষের বার্ষিক পরীক্ষা আগামী ২৮-১১-২০২৬ তারিখ রোজ শনিবার সকাল ১০:০০ ঘটিকা হতে দুপুর ১:০০ ঘটিকা পর্যন্ত নির্ধারিত রুটিন অনুযায়ী অনুষ্ঠিত হবে।
+
+• প্রবেশপত্র সংগ্রহ: আগামী ২০-১১-২০২৬ তারিখের মধ্যে বিদ্যালয়ের যাবতীয় বকেয়া বেতন ও পরীক্ষার ফি পরিশোধপূর্বক শ্রেণি শিক্ষকের নিকট হতে প্রবেশপত্র সংগ্রহ করতে হবে।
+• পরীক্ষার শৃঙ্খলা: পরীক্ষা শুরুর অন্তত ৩০ মিনিট পূর্বে নির্ধারিত কক্ষে আসন গ্রহণ করতে হবে এবং বিদ্যালয়ের নির্ধারিত ইউনিফর্ম ও আইডি কার্ড পরিধান করা বাধ্যতামূলক।</p>
             </div>
-            <div data-notice-cat="general" data-notice-title="বুলিং ও র‍্যাগিং প্রতিরোধ নীতিমালা-২০২৩ অনুযায়ী সচেতনতামূলক সেমিনার" data-notice-date="১৫-১০-২০২৬" data-notice-cat-label="general" data-notice-content="শিক্ষা মন্ত্রণালয়ের নির্দেশনা অনুসারে বিদ্যালয়ে নিরাপদ পরিবেশ বজায় রাখার উদ্দেশ্যে সকল শিক্ষক ও শিক্ষার্থীদের উপস্থিতিতে আগামী ২৫শে অক্টোবর র‍্যাগিং ও বুলিং প্রতিরোধ বিষয়ক বিশেষ সেমিনার অনুষ্ঠিত হবে।" class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs cursor-pointer hover:border-emerald-600 transition-all">
+            <div data-notice-cat="exam" data-notice-title="১০ম শ্রেণির এসএসসি নির্বাচনী (টেস্ট) পরীক্ষা ২০২৬-এর রুটিন ও ফরম পূরণ নির্দেশনা" data-notice-date="১৫-১০-২০২৬" data-notice-cat-label="exam" data-notice-content="১০ম শ্রেণির (এসএসসি পরীক্ষার্থী ২০২৭) সকল বিজ্ঞান, মানবিক ও ব্যবসায় শিক্ষা বিভাগের শিক্ষার্থীদের জানানো যাচ্ছে যে, মাধ্যমিক ও উচ্চমাধ্যমিক শিক্ষা বোর্ড, কুমিল্লা-এর নির্দেশনা মোতাবেক নির্বাচনী (টেস্ট) পরীক্ষা আগামী ০৫-১১-২০২৬ তারিখ হতে শুরু হবে।
+
+১. ব্যবহারিক পরীক্ষা: লিখিত পরীক্ষা শেষ হওয়ার পর নির্ধারিত তারিখে বিজ্ঞানাগার ও আইসিটি ল্যাবে ব্যবহারিক পরীক্ষা অনুষ্ঠিত হবে।
+২. বোর্ড ফরম পূরণ: নির্বাচনী পরীক্ষায় অকৃতকার্য কোনো শিক্ষার্থীকে চূড়ান্ত এসএসসি বোর্ড পরীক্ষার ফরম পূরণের অনুমতি প্রদান করা হবে না। বিস্তারিত রুটিন নোটিশ বোর্ড ও একাডেমিক পোর্টালে সংযুক্ত করা হয়েছে।" class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs cursor-pointer hover:border-emerald-600 transition-all">
               <div class="flex justify-between text-xs text-slate-500 mb-2">
-                <span class="font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">general</span>
+                <span class="font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">exam</span>
                 <span class="font-mono">১৫-১০-২০২৬</span>
               </div>
-              <h3 class="font-bold text-slate-900 text-base mb-2">বুলিং ও র‍্যাগিং প্রতিরোধ নীতিমালা-২০২৩ অনুযায়ী সচেতনতামূলক সেমিনার</h3>
-              <p class="text-xs text-slate-600 leading-relaxed">শিক্ষা মন্ত্রণালয়ের নির্দেশনা অনুসারে বিদ্যালয়ে নিরাপদ পরিবেশ বজায় রাখার উদ্দেশ্যে সকল শিক্ষক ও শিক্ষার্থীদের উপস্থিতিতে আগামী ২৫শে অক্টোবর র‍্যাগিং ও বুলিং প্রতিরোধ বিষয়ক বিশেষ সেমিনার অনুষ্ঠিত হবে।</p>
+              <h3 class="font-bold text-slate-900 text-base mb-2">১০ম শ্রেণির এসএসসি নির্বাচনী (টেস্ট) পরীক্ষা ২০২৬-এর রুটিন ও ফরম পূরণ নির্দেশনা</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">১০ম শ্রেণির (এসএসসি পরীক্ষার্থী ২০২৭) সকল বিজ্ঞান, মানবিক ও ব্যবসায় শিক্ষা বিভাগের শিক্ষার্থীদের জানানো যাচ্ছে যে, মাধ্যমিক ও উচ্চমাধ্যমিক শিক্ষা বোর্ড, কুমিল্লা-এর নির্দেশনা মোতাবেক নির্বাচনী (টেস্ট) পরীক্ষা আগামী ০৫-১১-২০২৬ তারিখ হতে শুরু হবে।
+
+১. ব্যবহারিক পরীক্ষা: লিখিত পরীক্ষা শেষ হওয়ার পর নির্ধারিত তারিখে বিজ্ঞানাগার ও আইসিটি ল্যাবে ব্যবহারিক পরীক্ষা অনুষ্ঠিত হবে।
+২. বোর্ড ফরম পূরণ: নির্বাচনী পরীক্ষায় অকৃতকার্য কোনো শিক্ষার্থীকে চূড়ান্ত এসএসসি বোর্ড পরীক্ষার ফরম পূরণের অনুমতি প্রদান করা হবে না। বিস্তারিত রুটিন নোটিশ বোর্ড ও একাডেমিক পোর্টালে সংযুক্ত করা হয়েছে।</p>
             </div>
-            <div data-notice-cat="academic" data-notice-title="এসএসসি পরীক্ষার নির্বাচনী পরীক্ষার সময়সূচি ২০২৬" data-notice-date="১০-১০-২০২৬" data-notice-cat-label="academic" data-notice-content="১০ম শ্রেণির শিক্ষার্থীদের অবগতির জন্য জানানো যাচ্ছে যে, নির্বাচনী পরীক্ষা আগামী ৫ই নভেম্বর হতে শুরু হবে। বিস্তারিত বিষয়ভিত্তিক রুটিন নোটিশবোর্ড ও ওয়েবসাইট থেকে ডাউনলোড করা যাবে।" class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs cursor-pointer hover:border-emerald-600 transition-all">
+            <div data-notice-cat="general" data-notice-title="সমন্বিত উপবৃত্তি কর্মসূচি (HSP) ও দরিদ্র তহবিল বৃত্তির আবেদন আহ্বান" data-notice-date="১২-১০-২০২৬" data-notice-cat-label="general" data-notice-content="প্রধানমন্ত্রীর শিক্ষা সহায়তা ট্রাস্টের আওতাধীন সমন্বিত উপবৃত্তি কর্মসূচি (HSP)-এর আওতায় ৬ষ্ঠ ও ৯ম শ্রেণির তালিকাভুক্ত যোগ্য শিক্ষার্থীদের তথ্য এন্ট্রি এবং বিদ্যালয়ের অভ্যন্তরীণ কল্যাণ ও দরিদ্র তহবিল হতে বেতন মওকুফ (Free-Studentship) সুবিধার জন্য আবেদন আহ্বান করা যাচ্ছে।
+
+প্রয়োজনীয় ডকুমেন্টসমূহ:
+• শিক্ষার্থীর ১৭ ডিজিটের অনলাইন জন্ম নিবন্ধন সনদ
+• পিতা ও মাতার জাতীয় পরিচয়পত্র (NID) কপি
+• অভিভাবকের সচল তফসিলি ব্যাংক হিসাব অথবা নিজ নামে রেজিস্ট্রিকৃত মোবাইল ব্যাংকিং (বিকাশ/নগদ) হিসাব নম্বর
+
+আগামী ১০-১১-২০২৬ তারিখের মধ্যে আইসিটি শিক্ষক অথবা অফিস সহকারী কাম হিসাবরক্ষকের নিকট ফরম জমা দেওয়ার জন্য নির্দেশ দেওয়া হলো।" class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs cursor-pointer hover:border-emerald-600 transition-all">
+              <div class="flex justify-between text-xs text-slate-500 mb-2">
+                <span class="font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">general</span>
+                <span class="font-mono">১২-১০-২০২৬</span>
+              </div>
+              <h3 class="font-bold text-slate-900 text-base mb-2">সমন্বিত উপবৃত্তি কর্মসূচি (HSP) ও দরিদ্র তহবিল বৃত্তির আবেদন আহ্বান</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">প্রধানমন্ত্রীর শিক্ষা সহায়তা ট্রাস্টের আওতাধীন সমন্বিত উপবৃত্তি কর্মসূচি (HSP)-এর আওতায় ৬ষ্ঠ ও ৯ম শ্রেণির তালিকাভুক্ত যোগ্য শিক্ষার্থীদের তথ্য এন্ট্রি এবং বিদ্যালয়ের অভ্যন্তরীণ কল্যাণ ও দরিদ্র তহবিল হতে বেতন মওকুফ (Free-Studentship) সুবিধার জন্য আবেদন আহ্বান করা যাচ্ছে।
+
+প্রয়োজনীয় ডকুমেন্টসমূহ:
+• শিক্ষার্থীর ১৭ ডিজিটের অনলাইন জন্ম নিবন্ধন সনদ
+• পিতা ও মাতার জাতীয় পরিচয়পত্র (NID) কপি
+• অভিভাবকের সচল তফসিলি ব্যাংক হিসাব অথবা নিজ নামে রেজিস্ট্রিকৃত মোবাইল ব্যাংকিং (বিকাশ/নগদ) হিসাব নম্বর
+
+আগামী ১০-১১-২০২৬ তারিখের মধ্যে আইসিটি শিক্ষক অথবা অফিস সহকারী কাম হিসাবরক্ষকের নিকট ফরম জমা দেওয়ার জন্য নির্দেশ দেওয়া হলো।</p>
+            </div>
+            <div data-notice-cat="academic" data-notice-title="শীতকালীন সময়সূচি অনুযায়ী প্রাত্যহিক সমাবেশ ও শ্রেণি পাঠদান রুটিন পরিবর্তন" data-notice-date="০৮-১০-২০২৬" data-notice-cat-label="academic" data-notice-content="সকল শিক্ষক, কর্মকর্তা-কর্মচারী ও শিক্ষার্থীদের অবগতির জন্য জানানো যাচ্ছে যে, শীতকালীন আবহাওয়া বিবেচনায় আগামী ০১ নভেম্বর ২০২৬ তারিখ হতে বিদ্যালয়ের প্রাত্যহিক সময়সূচি নিম্নরূপ নির্ধারণ করা হলো:
+
+• প্রাত্যহিক সমাবেশ (জাতীয় সংগীত ও শপথ): সকাল ৯:৪৫ ঘটিকা
+• ১ম পিরিয়ড শুরু: সকাল ১০:০০ ঘটিকা
+• টিফিন ও জোহরের নামাজের বিরতি: দুপুর ১:০০ হতে ১:৪০ ঘটিকা
+• ছুটি (৬ষ্ঠ-১০ম শ্রেণি): বিকাল ৪:০০ ঘটিকা
+
+সকল শিক্ষার্থীকে নির্ধারিত সময়ের পূর্বে বিদ্যালয় প্রাঙ্গণে উপস্থিত থাকার জন্য কঠোরভাবে নির্দেশ দেওয়া হলো।" class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs cursor-pointer hover:border-emerald-600 transition-all">
               <div class="flex justify-between text-xs text-slate-500 mb-2">
                 <span class="font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">academic</span>
-                <span class="font-mono">১০-১০-২০২৬</span>
+                <span class="font-mono">০৮-১০-২০২৬</span>
               </div>
-              <h3 class="font-bold text-slate-900 text-base mb-2">এসএসসি পরীক্ষার নির্বাচনী পরীক্ষার সময়সূচি ২০২৬</h3>
-              <p class="text-xs text-slate-600 leading-relaxed">১০ম শ্রেণির শিক্ষার্থীদের অবগতির জন্য জানানো যাচ্ছে যে, নির্বাচনী পরীক্ষা আগামী ৫ই নভেম্বর হতে শুরু হবে। বিস্তারিত বিষয়ভিত্তিক রুটিন নোটিশবোর্ড ও ওয়েবসাইট থেকে ডাউনলোড করা যাবে।</p>
+              <h3 class="font-bold text-slate-900 text-base mb-2">শীতকালীন সময়সূচি অনুযায়ী প্রাত্যহিক সমাবেশ ও শ্রেণি পাঠদান রুটিন পরিবর্তন</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">সকল শিক্ষক, কর্মকর্তা-কর্মচারী ও শিক্ষার্থীদের অবগতির জন্য জানানো যাচ্ছে যে, শীতকালীন আবহাওয়া বিবেচনায় আগামী ০১ নভেম্বর ২০২৬ তারিখ হতে বিদ্যালয়ের প্রাত্যহিক সময়সূচি নিম্নরূপ নির্ধারণ করা হলো:
+
+• প্রাত্যহিক সমাবেশ (জাতীয় সংগীত ও শপথ): সকাল ৯:৪৫ ঘটিকা
+• ১ম পিরিয়ড শুরু: সকাল ১০:০০ ঘটিকা
+• টিফিন ও জোহরের নামাজের বিরতি: দুপুর ১:০০ হতে ১:৪০ ঘটিকা
+• ছুটি (৬ষ্ঠ-১০ম শ্রেণি): বিকাল ৪:০০ ঘটিকা
+
+সকল শিক্ষার্থীকে নির্ধারিত সময়ের পূর্বে বিদ্যালয় প্রাঙ্গণে উপস্থিত থাকার জন্য কঠোরভাবে নির্দেশ দেওয়া হলো।</p>
+            </div>
+            <div data-notice-cat="general" data-notice-title="বুলিং ও র‍্যাগিং প্রতিরোধ নীতিমালা-২০২৩ অনুযায়ী সচেতনতামূলক সেমিনার ও অভিভাবক সভা" data-notice-date="০৫-১০-২০২৬" data-notice-cat-label="general" data-notice-content="শিক্ষা মন্ত্রণালয়ের নির্দেশনা অনুসারে বিদ্যালয়ে শতভাগ নিরাপদ, আনন্দময় ও শিক্ষার্থীবান্ধব পরিবেশ বজায় রাখার উদ্দেশ্যে সকল শিক্ষক, অভিভাবক প্রতিনিধি ও শিক্ষার্থীদের উপস্থিতিতে আগামী ২৫-১০-২০২৬ তারিখ সকাল ১১:০০ ঘটিকায় বিদ্যালয় মিলনায়তনে বুলিং ও র‍্যাগিং প্রতিরোধ বিষয়ক বিশেষ সেমিনার এবং অভিভাবক মতবিনিময় সভা অনুষ্ঠিত হবে। উক্ত সভায় সম্মানিত অভিভাবকদের উপস্থিত থাকার জন্য বিশেষভাবে অনুরোধ জানানো যাচ্ছে।" class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs cursor-pointer hover:border-emerald-600 transition-all">
+              <div class="flex justify-between text-xs text-slate-500 mb-2">
+                <span class="font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">general</span>
+                <span class="font-mono">০৫-১০-২০২৬</span>
+              </div>
+              <h3 class="font-bold text-slate-900 text-base mb-2">বুলিং ও র‍্যাগিং প্রতিরোধ নীতিমালা-২০২৩ অনুযায়ী সচেতনতামূলক সেমিনার ও অভিভাবক সভা</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">শিক্ষা মন্ত্রণালয়ের নির্দেশনা অনুসারে বিদ্যালয়ে শতভাগ নিরাপদ, আনন্দময় ও শিক্ষার্থীবান্ধব পরিবেশ বজায় রাখার উদ্দেশ্যে সকল শিক্ষক, অভিভাবক প্রতিনিধি ও শিক্ষার্থীদের উপস্থিতিতে আগামী ২৫-১০-২০২৬ তারিখ সকাল ১১:০০ ঘটিকায় বিদ্যালয় মিলনায়তনে বুলিং ও র‍্যাগিং প্রতিরোধ বিষয়ক বিশেষ সেমিনার এবং অভিভাবক মতবিনিময় সভা অনুষ্ঠিত হবে। উক্ত সভায় সম্মানিত অভিভাবকদের উপস্থিত থাকার জন্য বিশেষভাবে অনুরোধ জানানো যাচ্ছে।</p>
+            </div>
+            <div data-notice-cat="academic" data-notice-title="বিজ্ঞানাগার ব্যবহারিক খাতা (Practical Notebook) ও প্রজেক্ট জমাদানের চূড়ান্ত তারিখ" data-notice-date="০২-১০-২০২৬" data-notice-cat-label="academic" data-notice-content="৯ম ও ১০ম শ্রেণির বিজ্ঞান বিভাগ (পদার্থবিজ্ঞান, রসায়ন, জীববিজ্ঞান ও উচ্চতর গণিত) এবং সকল বিভাগের তথ্য ও যোগাযোগ প্রযুক্তি (ICT) বিষয়ের শিক্ষার্থীদের জানানো যাচ্ছে যে, বার্ষিক ও নির্বাচনী পরীক্ষার পূর্বেই আগামী ১৮-১১-২০২৬ তারিখের মধ্যে ব্যবহারিক খাতা (Practical Notebook) প্রস্তুত করে সংশ্লিষ্ট বিষয় শিক্ষকের নিকট জমা দিয়ে স্বাক্ষর করিয়ে নিতে হবে। নির্ধারিত তারিখের পর কোনো ব্যবহারিক খাতা মূল্যায়ন করা হবে না।" class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs cursor-pointer hover:border-emerald-600 transition-all">
+              <div class="flex justify-between text-xs text-slate-500 mb-2">
+                <span class="font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">academic</span>
+                <span class="font-mono">০২-১০-২০২৬</span>
+              </div>
+              <h3 class="font-bold text-slate-900 text-base mb-2">বিজ্ঞানাগার ব্যবহারিক খাতা (Practical Notebook) ও প্রজেক্ট জমাদানের চূড়ান্ত তারিখ</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">৯ম ও ১০ম শ্রেণির বিজ্ঞান বিভাগ (পদার্থবিজ্ঞান, রসায়ন, জীববিজ্ঞান ও উচ্চতর গণিত) এবং সকল বিভাগের তথ্য ও যোগাযোগ প্রযুক্তি (ICT) বিষয়ের শিক্ষার্থীদের জানানো যাচ্ছে যে, বার্ষিক ও নির্বাচনী পরীক্ষার পূর্বেই আগামী ১৮-১১-২০২৬ তারিখের মধ্যে ব্যবহারিক খাতা (Practical Notebook) প্রস্তুত করে সংশ্লিষ্ট বিষয় শিক্ষকের নিকট জমা দিয়ে স্বাক্ষর করিয়ে নিতে হবে। নির্ধারিত তারিখের পর কোনো ব্যবহারিক খাতা মূল্যায়ন করা হবে না।</p>
+            </div>
+            <div data-notice-cat="admission" data-notice-title="ট্রান্সফার সার্টিফিকেট (TC) ও বোর্ড ছাড়পত্রের মাধ্যমে ৭ম ও ৮ম শ্রেণিতে ভর্তির নির্দেশিকা" data-notice-date="২৮-০৯-২০২৬" data-notice-cat-label="admission" data-notice-content="অভিভাবকের বদলি বা বাসস্থানজনিত কারণে অন্য অনুমোদিত মাধ্যমিক বিদ্যালয় হতে ছাড়পত্র (Transfer Certificate - TC) নিয়ে চৌকুড়ী উচ্চ বিদ্যালয়-এ ৭ম ও ৮ম শ্রেণিতে ভর্তিচ্ছু শিক্ষার্থীদের অবগতির জন্য জানানো যাচ্ছে যে, আসন শূন্য থাকা সাপেক্ষে আগামী ১৫-১২-২০২৬ তারিখ পর্যন্ত আবেদন গ্রহণ করা হবে। আবেদনের সাথে পূর্ববর্তী প্রতিষ্ঠানের মূল ছাড়পত্র, বার্ষিক পরীক্ষার একাডেমিক ট্রান্সক্রিপ্ট এবং অনলাইন জন্ম নিবন্ধন সনদ সংযুক্ত করতে হবে।" class="bg-white p-5 rounded-xl border border-slate-200 shadow-2xs cursor-pointer hover:border-emerald-600 transition-all">
+              <div class="flex justify-between text-xs text-slate-500 mb-2">
+                <span class="font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">admission</span>
+                <span class="font-mono">২৮-০৯-২০২৬</span>
+              </div>
+              <h3 class="font-bold text-slate-900 text-base mb-2">ট্রান্সফার সার্টিফিকেট (TC) ও বোর্ড ছাড়পত্রের মাধ্যমে ৭ম ও ৮ম শ্রেণিতে ভর্তির নির্দেশিকা</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">অভিভাবকের বদলি বা বাসস্থানজনিত কারণে অন্য অনুমোদিত মাধ্যমিক বিদ্যালয় হতে ছাড়পত্র (Transfer Certificate - TC) নিয়ে চৌকুড়ী উচ্চ বিদ্যালয়-এ ৭ম ও ৮ম শ্রেণিতে ভর্তিচ্ছু শিক্ষার্থীদের অবগতির জন্য জানানো যাচ্ছে যে, আসন শূন্য থাকা সাপেক্ষে আগামী ১৫-১২-২০২৬ তারিখ পর্যন্ত আবেদন গ্রহণ করা হবে। আবেদনের সাথে পূর্ববর্তী প্রতিষ্ঠানের মূল ছাড়পত্র, বার্ষিক পরীক্ষার একাডেমিক ট্রান্সক্রিপ্ট এবং অনলাইন জন্ম নিবন্ধন সনদ সংযুক্ত করতে হবে।</p>
             </div>
         </div>
       </section>
+    
   </main>
 
-  <!-- Public Footer -->
+  
+
+  
   <footer class="bg-slate-900 text-slate-300 border-t-4 border-[#006A4E] mt-12">
     <div class="max-w-7xl mx-auto px-4 py-10 md:py-12">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -211,41 +411,35 @@
             </div>
             <div>
               <h3 class="text-base font-bold text-white leading-snug">চৌকুড়ী উচ্চ বিদ্যালয়</h3>
-              <p class="text-xs text-emerald-400 font-medium">NANGALKOT (নাঙ্গলকোট), CUMILLA (কুমিল্লা)</p>
+              <p class="text-xs text-emerald-400 font-medium">নাঙ্গলকোট, কুমিল্লা</p>
             </div>
           </div>
-          <p class="text-xs text-slate-400 leading-relaxed line-clamp-3">কুমিল্লা জেলার নাঙ্গলকোট উপজেলার ঢালুয়া ইউনিয়নের ৯ নং ওয়ার্ডের চৌকুড়ী গ্রামে ১৯৯৩ সালের ১লা জানুয়ারি চৌকুড়ী উচ্চ বিদ্যালয় প্রতিষ্ঠিত হয়। স্থানীয় বিদ্যানুরাগী ব্যক্তিত্বদের ঐকান্তিক প্রচেষ্টায় প্রতিষ্ঠিত এ প্রতিষ্ঠানটি ১৯৯৪ সালে নিম্ন মাধ্যমিক ও ১৯৯৬ সালে মাধ্যমিক হিসেবে সরকারের স্বীকৃতি অর্জন করে এবং ১৯৯৫ ও ২০০০ সালে পর্যায়ক্রমে এমপিওভুক্ত হয়। বর্তমানে ৩২১ জন শিক্ষার্থী নিয়ে বিদ্যালয়টি সুষ্ঠু পরিবেশে পাঠদান অব্যাহত রেখেছে।</p>
+          <p class="text-xs text-slate-400 leading-relaxed line-clamp-3">চৌকুড়ী উচ্চ বিদ্যালয় কুমিল্লা জেলার নাঙ্গলকোট উপজেলার একটি শীর্ষস্থানীয় মাধ্যমিক শিক্ষাপ্রতিষ্ঠান। ১৯৯৩ সালে প্রতিষ্ঠিত এ বিদ্যাপীঠ আধুনিক বিজ্ঞান, তথ্যপ্রযুক্তি ও নৈতিক শিক্ষার সমন্বয়ে শিক্ষার্থীদের আদর্শ সুনাগরিক হিসেবে গড়ে তুলতে অঙ্গীকারবদ্ধ।</p>
           <div class="pt-1 flex flex-wrap gap-2 text-[11px]">
-            <span class="px-2.5 py-1 rounded bg-slate-800 text-emerald-300 font-medium border border-slate-700">ইআইআইএন: ১০৫৮৭৬</span>
-            <span class="px-2.5 py-1 rounded bg-slate-800 text-amber-300 font-medium border border-slate-700">কোড: ৩৫৮৩</span>
+            <span class="px-2.5 py-1 rounded bg-slate-800 text-emerald-300 font-medium border border-slate-700">ইআইআইএন: ১০৮০৮৬</span><span class="px-2.5 py-1 rounded bg-slate-800 text-emerald-300 font-medium border border-slate-700">বিদ্যালয় কোড: ৮২০৯</span><span class="px-2.5 py-1 rounded bg-slate-800 text-emerald-300 font-medium border border-slate-700">স্থাপিত: ১৯৯৩</span>
           </div>
         </div>
 
         <div>
           <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-3 pb-2 border-b border-slate-800">গুরুত্বপূর্ণ পাতা</h4>
           <ul class="grid grid-cols-2 gap-2 text-xs">
-            <li><a href="../index.html" class="hover:text-emerald-400 transition-colors">হোম</a></li><li><a href="../about/index.html" class="hover:text-emerald-400 transition-colors">পরিচিতি</a></li><li><a href="../notices/index.html" class="hover:text-emerald-400 transition-colors">নোটিশ বোর্ড</a></li><li><a href="../teachers/index.html" class="hover:text-emerald-400 transition-colors">শিক্ষক ও কর্মচারী</a></li><li><a href="../committee/index.html" class="hover:text-emerald-400 transition-colors">পরিচালনা পর্ষদ</a></li><li><a href="../students/index.html" class="hover:text-emerald-400 transition-colors">শিক্ষার্থী তথ্য</a></li><li><a href="../academics/index.html" class="hover:text-emerald-400 transition-colors">একাডেমিক</a></li><li><a href="../facilities/index.html" class="hover:text-emerald-400 transition-colors">অবকাঠামো ও সহশিক্ষা</a></li><li><a href="../charter/index.html" class="hover:text-emerald-400 transition-colors">সিটিজেন চার্টার</a></li><li><a href="../gallery/index.html" class="hover:text-emerald-400 transition-colors">গ্যালারি</a></li><li><a href="../admission/index.html" class="hover:text-emerald-400 transition-colors">ভর্তি আবেদন</a></li><li><a href="../contact/index.html" class="hover:text-emerald-400 transition-colors">যোগাযোগ</a></li>
+            <li><a href="../index.html" class="hover:text-emerald-400 transition-colors">প্রচ্ছদ</a></li><li><a href="../about/index.html" class="hover:text-emerald-400 transition-colors">প্রতিষ্ঠান পরিচিতি</a></li><li><a href="../notices/index.html" class="hover:text-emerald-400 transition-colors">নোটিশ বোর্ড</a></li><li><a href="../teachers/index.html" class="hover:text-emerald-400 transition-colors">শিক্ষক ও কর্মচারী</a></li><li><a href="../committee/index.html" class="hover:text-emerald-400 transition-colors">পরিচালনা পর্ষদ</a></li><li><a href="../students/index.html" class="hover:text-emerald-400 transition-colors">শিক্ষার্থী পরিসংখ্যান</a></li><li><a href="../facilities/index.html" class="hover:text-emerald-400 transition-colors">ভৌত অবকাঠামো</a></li><li><a href="../gallery/index.html" class="hover:text-emerald-400 transition-colors">ফটো গ্যালারি</a></li><li><a href="../charter/index.html" class="hover:text-emerald-400 transition-colors">সিটিজেন চার্টার</a></li><li><a href="../academics/index.html" class="hover:text-emerald-400 transition-colors">একাডেমিক ও ফলাফল</a></li><li><a href="../admission/index.html" class="hover:text-emerald-400 transition-colors">ভর্তি তথ্য</a></li><li><a href="../fees/index.html" class="hover:text-emerald-400 transition-colors">ফি ও বেতন নীতিমালা</a></li><li><a href="../contact/index.html" class="hover:text-emerald-400 transition-colors">যোগাযোগ</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-3 pb-2 border-b border-slate-800">সরকারি শিক্ষা বাতায়ন লিংক</h4>
           <ul class="space-y-2 text-xs">
-            <li><a href="https://moedu.gov.bd/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400">↗ শিক্ষা মন্ত্রণালয়</a></li>
-            <li><a href="https://dshe.gov.bd/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400">↗ মাধ্যমিক ও উচ্চশিক্ষা অধিদপ্তর (মাউশি)</a></li>
-            <li><a href="https://banbeis.gov.bd/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400">↗ ব্যানবেইস (BANBEIS)</a></li>
-            <li><a href="https://comillaboard.portal.gov.bd/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400">↗ কুমিল্লা শিক্ষা বোর্ড</a></li>
-            <li><a href="https://nctb.gov.bd/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400">↗ এনসিটিবি (NCTB)</a></li>
-            <li><a href="https://www.teachers.gov.bd/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400">↗ শিক্ষক বাতায়ন</a></li>
+            <li><a href="https://moedu.gov.bd/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400">↗ শিক্ষা মন্ত্রণালয়</a></li><li><a href="https://dshe.gov.bd/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400">↗ মাধ্যমিক ও উচ্চশিক্ষা অধিদপ্তর (মাউশি)</a></li><li><a href="https://banbeis.gov.bd/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400">↗ বাংলাদেশ শিক্ষাতথ্য ও পরিসংখ্যান ব্যুরো (ব্যানবেইস)</a></li><li><a href="https://comillaboard.portal.gov.bd/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400">↗ কুমিল্লা শিক্ষা বোর্ড</a></li><li><a href="https://nctb.gov.bd/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400">↗ জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (এনসিটিবি)</a></li><li><a href="https://www.teachers.gov.bd/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400">↗ শিক্ষক বাতায়ন</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-3 pb-2 border-b border-slate-800">যোগাযোগ ও অবস্থান</h4>
           <div class="bg-slate-800/80 rounded-xl p-3.5 border border-slate-700/80 space-y-2 text-xs">
-            <p class="text-slate-300"><span class="text-slate-400">ঠিকানা:</span> CHOWKURI (চৌকুড়ী), ডাকঘর: GUNABATI (গুণবতী) (৩৫৮৩), NANGALKOT (নাঙ্গলকোট), CUMILLA (কুমিল্লা)</p>
-            <p class="text-slate-300"><span class="text-slate-400">মোবাইল:</span> ০১৮১৯৮৪৪৪৭৩, ০১৮১৬২৭৭৫১৩</p>
-            <p class="text-slate-300 truncate"><span class="text-slate-400">ইমেইল:</span> hmchowkuri93@gmail.com</p>
+            <p class="text-slate-300"><span class="text-slate-400">ঠিকানা:</span> চৌকুড়ী, ডাকঘর: মন্নারা (৩৫৮৩), নাঙ্গলকোট, কুমিল্লা</p>
+            <p class="text-slate-300"><span class="text-slate-400">মোবাইল:</span> ০১৩০৯১০৬০৮৬, ০১৩০৯১০৬০৮৬</p>
+            <p class="text-slate-300 break-all"><span class="text-slate-400">ইমেইল:</span> hmchowkuri93@gmail.com</p>
             <div class="pt-1.5 border-t border-slate-700/70 text-emerald-400 font-semibold">✓ ব্যানবেইস ভেরিফাইড প্রতিষ্ঠান</div>
           </div>
         </div>
@@ -266,14 +460,17 @@
     </div>
 
     <div class="bg-slate-950 py-3.5 px-4 text-xs text-slate-400 border-t border-slate-800/80">
-      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3 text-center md:text-left">
         <p>© ২০২৬ চৌকুড়ী উচ্চ বিদ্যালয়। সর্বস্বত্ব সংরক্ষিত।</p>
+        <div class="flex flex-wrap items-center justify-center gap-3">
+            <a href="/"  class="hover:text-emerald-400 transition-colors">প্রচ্ছদ</a><a href="/about/"  class="hover:text-emerald-400 transition-colors">পরিচিতি ও ইতিহাস</a><a href="/notices/"  class="hover:text-emerald-400 transition-colors">নোটিশ বোর্ড</a><a href="/teachers/"  class="hover:text-emerald-400 transition-colors">শিক্ষক ও কর্মচারী</a><a href="/contact/"  class="hover:text-emerald-400 transition-colors">যোগাযোগ</a>
+          </div>
         <p>কারিগরি পরিকল্পনা, ডিজাইন ও সৌজন্যে: <a href="https://softdows.com" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-amber-300 font-bold">Softdows</a></p>
       </div>
     </div>
   </footer>
 
-  <!-- Interactive Modal 1: All 23 National Emergency Hotlines -->
+  
   <div id="static-hotlines-modal" class="hidden fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-xs flex items-center justify-center p-4">
     <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[88vh] flex flex-col overflow-hidden shadow-2xl border border-slate-200">
       <div class="bg-gradient-to-r from-[#004734] to-[#006A4E] text-white px-5 py-4 flex items-center justify-between">
@@ -295,7 +492,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">৩৩৩</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">সরকারি তথ্য ও সেবা</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">সরকারি তথ্য ও সেবা</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ৩৩৩</span>
               </div>
             </div>
@@ -308,7 +505,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">৯৯৯</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">জরুরি সেবা (পুলিশ, ফায়ার ও অ্যাম্বুলেন্স)</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">জরুরি সেবা (পুলিশ, ফায়ার ও অ্যাম্বুলেন্স)</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ৯৯৯</span>
               </div>
             </div>
@@ -321,7 +518,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১০২</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">ফায়ার সার্ভিস হটলাইন</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">ফায়ার সার্ভিস হটলাইন</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১০২</span>
               </div>
             </div>
@@ -334,7 +531,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১৬১০৭</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">বিআরটিএ সার্ভিস পোর্টাল (বিএসপি)</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">বিআরটিএ সার্ভিস পোর্টাল (বিএসপি)</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১৬১০৭</span>
               </div>
             </div>
@@ -347,7 +544,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১০৯</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">নারী ও শিশু নির্যাতন প্রতিরোধ</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">নারী ও শিশু নির্যাতন প্রতিরোধ</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১০৯</span>
               </div>
             </div>
@@ -360,7 +557,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১০৯৮</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">চাইল্ড হেল্পলাইন (শিশু সহায়তা)</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">চাইল্ড হেল্পলাইন (শিশু সহায়তা)</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১০৯৮</span>
               </div>
             </div>
@@ -373,7 +570,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১৬২৬৩</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">স্বাস্থ্য বাতায়ন</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">স্বাস্থ্য বাতায়ন</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১৬২৬৩</span>
               </div>
             </div>
@@ -386,7 +583,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১৬১২২</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">ভূমি সেবা হটলাইন</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">ভূমি সেবা হটলাইন</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১৬১২২</span>
               </div>
             </div>
@@ -399,7 +596,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১০৬</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">দুদক (দুর্নীতি দমন কমিশন)</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">দুদক (দুর্নীতি দমন কমিশন)</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১০৬</span>
               </div>
             </div>
@@ -412,7 +609,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১০৯০</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">দুর্যোগের আগাম বার্তা</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">দুর্যোগের আগাম বার্তা</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১০৯০</span>
               </div>
             </div>
@@ -425,7 +622,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১৬৪৩০</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">সরকারি আইনি সহায়তা</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">সরকারি আইনি সহায়তা</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১৬৪৩০</span>
               </div>
             </div>
@@ -438,7 +635,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১৬১২৩</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">কৃষি কল সেন্টার</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">কৃষি কল সেন্টার</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১৬১২৩</span>
               </div>
             </div>
@@ -451,7 +648,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১৬৫৬</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">ইউনিয়ন পরিষদ হেল্পলাইন</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">ইউনিয়ন পরিষদ হেল্পলাইন</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১৬৫৬</span>
               </div>
             </div>
@@ -464,7 +661,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১০৫</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">জাতীয় পরিচয়পত্র তথ্য</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">জাতীয় পরিচয়পত্র তথ্য</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১০৫</span>
               </div>
             </div>
@@ -477,7 +674,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১৬১৩৫</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">প্রবাসী কল্যাণ হেল্পলাইন</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">প্রবাসী কল্যাণ হেল্পলাইন</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১৬১৩৫</span>
               </div>
             </div>
@@ -490,7 +687,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১৬৪৪৫</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">ই-পাসপোর্ট ও ইমিগ্রেশন সেবা</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">ই-পাসপোর্ট ও ইমিগ্রেশন সেবা</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১৬৪৪৫</span>
               </div>
             </div>
@@ -503,7 +700,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১৬৯৯৯</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">বিটিসিএল (BTCL) কল সেন্টার</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">বিটিসিএল (BTCL) কল সেন্টার</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১৬৯৯৯</span>
               </div>
             </div>
@@ -516,7 +713,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১৬১২১</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">ভোক্তা অধিকার সংরক্ষণ হটলাইন</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">ভোক্তা অধিকার সংরক্ষণ হটলাইন</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১৬১২১</span>
               </div>
             </div>
@@ -529,7 +726,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১৬২৬৭</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">নগদ (ডিজিটাল লেনদেন সহায়তা)</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">নগদ (ডিজিটাল লেনদেন সহায়তা)</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১৬২৬৭</span>
               </div>
             </div>
@@ -542,7 +739,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১৬২৪৭</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">বিকাশ (উপবৃত্তি ও লেনদেন সহায়তা)</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">বিকাশ (উপবৃত্তি ও লেনদেন সহায়তা)</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১৬২৪৭</span>
               </div>
             </div>
@@ -555,7 +752,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১০০</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">বিটিআরসি (টেলিযোগাযোগ অভিযোগ)</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">বিটিআরসি (টেলিযোগাযোগ অভিযোগ)</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১০০</span>
               </div>
             </div>
@@ -568,7 +765,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১০১</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">র‍্যাব (RAB) জরুরি সহায়তা</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">র‍্যাব (RAB) জরুরি সহায়তা</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১০১</span>
               </div>
             </div>
@@ -581,7 +778,7 @@
                 <span class="text-xs sm:text-sm font-extrabold leading-tight">১৩১</span>
               </div>
               <div class="min-w-0">
-                <h4 class="text-xs font-bold text-slate-900 line-clamp-1">বাংলাদেশ রেলওয়ে তথ্য সেবা</h4>
+                <h4 class="text-xs font-bold text-slate-900 break-words leading-snug">বাংলাদেশ রেলওয়ে তথ্য সেবা</h4>
                 <span class="text-[10px] text-slate-500">কল করুন: ১৩১</span>
               </div>
             </div>
@@ -591,7 +788,7 @@
     </div>
   </div>
 
-  <!-- Interactive Modal 2: Notice Detail -->
+  
   <div id="static-notice-modal" class="hidden fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-xs flex items-center justify-center p-4">
     <div class="bg-white rounded-2xl max-w-xl w-full overflow-hidden shadow-2xl border border-slate-200">
       <div class="bg-emerald-950 text-white px-5 py-4 flex items-center justify-between">
@@ -611,7 +808,7 @@
     </div>
   </div>
 
-  <!-- Interactive Modal 3: Staff Profile Detail -->
+  
   <div id="static-staff-modal" class="hidden fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-xs flex items-center justify-center p-4">
     <div class="bg-white rounded-2xl max-w-md w-full overflow-hidden shadow-2xl border border-slate-200">
       <div class="bg-emerald-950 text-white px-5 py-4 flex items-center justify-between">
@@ -637,7 +834,54 @@
     </div>
   </div>
 
-  <!-- Interactive Modal 4: Legal Disclaimer -->
+  
+  <div id="static-merit-modal" class="hidden fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full overflow-hidden shadow-2xl border border-amber-200">
+      <div class="relative bg-gradient-to-r from-emerald-950 via-emerald-900 to-slate-900 text-white px-5 pt-5 pb-12">
+        <div class="flex items-center justify-between">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/20 border border-amber-300/40 text-amber-300 text-[11px] font-bold">🏆 কৃতি শিক্ষার্থী প্রোফাইল</span>
+          <button data-close-modal="static-merit-modal" class="w-8 h-8 rounded-full bg-white/15 hover:bg-white/25 text-white flex items-center justify-center cursor-pointer">✕</button>
+        </div>
+      </div>
+      <div class="px-6 pb-6 -mt-10 relative text-xs">
+        <div class="flex flex-col items-center text-center">
+          <div class="w-24 h-24 rounded-2xl overflow-hidden ring-4 ring-amber-400 bg-white p-0.5 shadow-lg">
+            <img id="modal-merit-photo" src="" alt="" class="w-full h-full object-cover rounded-[14px]" />
+          </div>
+          <div class="mt-3 flex flex-wrap items-center justify-center gap-1.5">
+            <span id="modal-merit-gpa" class="inline-flex items-center gap-1 px-3 py-0.5 rounded-full bg-amber-100 border border-amber-300 text-amber-900 text-xs font-extrabold"></span>
+            <span id="modal-merit-exam" class="inline-flex items-center gap-1 px-3 py-0.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-900 text-xs font-bold"></span>
+          </div>
+          <h4 id="modal-merit-name" class="text-lg font-extrabold text-slate-900 mt-2"></h4>
+        </div>
+        <div class="mt-4 space-y-2.5">
+          <div class="grid grid-cols-2 gap-2.5">
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-200/80">
+              <span class="text-[10.5px] text-slate-500 block">📖 বিভাগ / শাখা</span>
+              <strong id="modal-merit-group" class="text-slate-900 mt-0.5 block"></strong>
+            </div>
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-200/80">
+              <span class="text-[10.5px] text-slate-500 block">📅 উত্তীর্ণের সন</span>
+              <strong id="modal-merit-year" class="text-slate-900 mt-0.5 block"></strong>
+            </div>
+          </div>
+          <div class="bg-emerald-50/70 p-3 rounded-xl border border-emerald-200/80">
+            <span class="text-[10.5px] text-emerald-700 block font-medium">🏛️ বর্তমান অধ্যয়নরত প্রতিষ্ঠান</span>
+            <strong id="modal-merit-inst" class="text-emerald-950 mt-0.5 block"></strong>
+          </div>
+          <div class="bg-amber-50/60 p-3.5 rounded-xl border border-amber-200/70">
+            <span class="text-[10.5px] text-amber-800 font-bold block mb-1">🏅 সাফল্য ও বিশেষ অর্জন</span>
+            <p id="modal-merit-achv" class="text-slate-700 leading-relaxed"></p>
+          </div>
+        </div>
+        <div class="mt-5 text-right pt-3 border-t border-slate-100">
+          <button data-close-modal="static-merit-modal" class="px-5 py-2 rounded-xl bg-slate-900 text-white text-xs font-bold cursor-pointer">বন্ধ করুন</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
   <div id="static-legal-modal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-xs flex items-center justify-center p-4">
     <div class="bg-white text-slate-800 rounded-2xl max-w-xl w-full overflow-hidden shadow-2xl border border-slate-200">
       <div class="bg-slate-900 text-white px-5 py-4 flex items-center justify-between">
@@ -646,7 +890,7 @@
       </div>
       <div class="p-5 space-y-3 text-xs md:text-sm text-slate-600 leading-relaxed max-h-[70vh] overflow-y-auto">
         <p class="font-medium text-slate-800">আইনি বিবৃতি ও দায়মুক্তি (Legal Disclaimer): এই ওয়েবসাইটটি গণপ্রজাতন্ত্রী বাংলাদেশ সরকারের শিক্ষা মন্ত্রণালয় ও বাংলাদেশ শিক্ষাতথ্য ও পরিসংখ্যান ব্যুরো (BANBEIS)-এর পাবলিক ডোমেইনে প্রকাশিত প্রাতিষ্ঠানিক তথ্যের ভিত্তিতে জনস্বার্থে ও শিক্ষাপ্রতিষ্ঠানের ডিজিটাল প্রদর্শনের উদ্দেশ্যে তৈরি করা হয়েছে।</p>
-        <p class="flex items-start gap-2"><span>✓</span><span>১. উন্মুক্ত সরকারি তথ্যের ব্যবহার: ওয়েবসাইটে প্রদর্শিত বিদ্যালয়ের সাধারণ তথ্য, ইআইআইএন (EIIN), শিক্ষার্থী পরিসংখ্যান ও অবকাঠামোগত বিবরণী ব্যানবেইস (BANBEIS) জরিপের উন্মুক্ত সরকারি প্রতিবেদন থেকে সংগৃহীত।</span></p><p class="flex items-start gap-2"><span>✓</span><span>২. ব্যক্তিগত গোপনীয়তা সুরক্ষা (Privacy Protection): সম্মানিত শিক্ষক ও কর্মচারীদের ব্যক্তিগত সংবেদনশীল তথ্য (যেমন— জাতীয় পরিচয়পত্র নম্বর/NID ও জন্ম তারিখ) জনসাধারণের জন্য উন্মুক্ত রাখা হয়নি; তা প্রশাসনিক গোপনীয়তা পিন দ্বারা সুরক্ষিত।</span></p><p class="flex items-start gap-2"><span>✓</span><span>৩. বিনামূল্যে মালিকানা হস্তান্তর (Free Official Claim): চৌকুড়ী উচ্চ বিদ্যালয়ের প্রধান শিক্ষক বা পরিচালনা পর্ষদ যেকোনো সময় Softdows-এর সাথে যোগাযোগ করে কোনো প্রকার ডেভেলপমেন্ট ফি ছাড়াই এই ওয়েবসাইটের পূর্ণাঙ্গ সিএমএস ও সোর্স কোডের অফিশিয়াল নিয়ন্ত্রণ গ্রহণ করতে পারবেন।</span></p><p class="flex items-start gap-2"><span>✓</span><span>৪. সংশোধন বা অপসারণের অধিকার: প্রতিষ্ঠান কর্তৃপক্ষ যদি কোনো তথ্য পরিমার্জন, হালনাগাদ বা ওয়েবসাইটটি অফলাইনে নেওয়ার অনুরোধ জানান, তবে অবহিত করার ২৪ ঘণ্টার মধ্যে তা কার্যকর করা হবে।</span></p>
+        <p class="flex items-start gap-2"><span>✓</span><span>১. উন্মুক্ত সরকারি তথ্যের ব্যবহার: ওয়েবসাইটে প্রদর্শিত বিদ্যালয়ের সাধারণ তথ্য, ইআইআইএন (EIIN), শিক্ষার্থী পরিসংখ্যান ও অবকাঠামোগত বিবরণী ব্যানবেইস (BANBEIS) জরিপের উন্মুক্ত সরকারি প্রতিবেদন থেকে সংগৃহীত।</span></p><p class="flex items-start gap-2"><span>✓</span><span>২. ব্যক্তিগত গোপনীয়তা সুরক্ষা (Privacy Protection): সম্মানিত শিক্ষক ও কর্মচারীদের ব্যক্তিগত সংবেদনশীল তথ্য (যেমন— জাতীয় পরিচয়পত্র নম্বর/NID ও জন্ম তারিখ) জনসাধারণের জন্য উন্মুক্ত রাখা হয়নি; তা প্রশাসনিক গোপনীয়তা পিন দ্বারা সুরক্ষিত।</span></p><p class="flex items-start gap-2"><span>✓</span><span>৩. বিনামূল্যে মালিকানা হস্তান্তর (Free Official Claim): চৌকুড়ী উচ্চ বিদ্যালয়-এর প্রধান শিক্ষক বা পরিচালনা পর্ষদ যেকোনো সময় Softdows-এর সাথে যোগাযোগ করে কোনো প্রকার ডেভেলপমেন্ট ফি ছাড়াই এই ওয়েবসাইটের পূর্ণাঙ্গ সিএমএস ও সোর্স কোডের অফিশিয়াল নিয়ন্ত্রণ গ্রহণ করতে পারবেন।</span></p><p class="flex items-start gap-2"><span>✓</span><span>৪. সংশোধন বা অপসারণের অধিকার: প্রতিষ্ঠান কর্তৃপক্ষ যদি কোনো তথ্য পরিমার্জন, হালনাগাদ বা ওয়েবসাইটটি অফলাইনে নেওয়ার অনুরোধ জানান, তবে অবহিত করার ২৪ ঘণ্টার মধ্যে তা কার্যকর করা হবে।</span></p>
       </div>
       <div class="px-5 py-3 bg-slate-50 border-t border-slate-200 flex items-center justify-between">
         <a href="https://softdows.com" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-[#006A4E] hover:underline">Softdows-এর সাথে যোগাযোগ করুন ↗</a>

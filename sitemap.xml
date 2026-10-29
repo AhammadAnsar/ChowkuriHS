@@ -1,74 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://chowkurihs.edu.bd/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <loc>https://www.chowkurihs.edu.bd/</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://chowkurihs.edu.bd/about/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <loc>https://www.chowkurihs.edu.bd/about/</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chowkurihs.edu.bd/notices/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <loc>https://www.chowkurihs.edu.bd/notices/</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chowkurihs.edu.bd/teachers/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <loc>https://www.chowkurihs.edu.bd/teachers/</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chowkurihs.edu.bd/committee/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <loc>https://www.chowkurihs.edu.bd/committee/</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chowkurihs.edu.bd/students/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <loc>https://www.chowkurihs.edu.bd/former-committee/</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chowkurihs.edu.bd/academics/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <loc>https://www.chowkurihs.edu.bd/students/</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chowkurihs.edu.bd/facilities/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <loc>https://www.chowkurihs.edu.bd/meritorious/</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chowkurihs.edu.bd/charter/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <loc>https://www.chowkurihs.edu.bd/academics/</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chowkurihs.edu.bd/gallery/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <loc>https://www.chowkurihs.edu.bd/academic/overview/</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chowkurihs.edu.bd/admission/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <loc>https://www.chowkurihs.edu.bd/academic/classes/</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://chowkurihs.edu.bd/contact/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <loc>https://www.chowkurihs.edu.bd/academic/curriculum/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.chowkurihs.edu.bd/academic/syllabus/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.chowkurihs.edu.bd/academic/routine/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.chowkurihs.edu.bd/academic/exam-routine/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.chowkurihs.edu.bd/academic/calendar/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.chowkurihs.edu.bd/academic/assessment/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.chowkurihs.edu.bd/academic/results/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.chowkurihs.edu.bd/academic/resources/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.chowkurihs.edu.bd/academic/policies/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.chowkurihs.edu.bd/academic/documents/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.chowkurihs.edu.bd/facilities/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.chowkurihs.edu.bd/charter/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.chowkurihs.edu.bd/gallery/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.chowkurihs.edu.bd/admission/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.chowkurihs.edu.bd/fees/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.chowkurihs.edu.bd/online-school/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.chowkurihs.edu.bd/contact/</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

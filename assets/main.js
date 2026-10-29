@@ -196,6 +196,58 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  // Meritorious Student Detail Modal Trigger & Filter
+  var meritModal = document.getElementById('static-merit-modal');
+  document.querySelectorAll('[data-merit-card]').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      e.preventDefault();
+      if (!meritModal) return;
+      document.getElementById('modal-merit-photo').setAttribute('src', el.getAttribute('data-merit-photo') || '');
+      document.getElementById('modal-merit-name').textContent = el.getAttribute('data-merit-name') || '';
+      document.getElementById('modal-merit-gpa').textContent = '★ ' + (el.getAttribute('data-merit-gpa') || '');
+      document.getElementById('modal-merit-exam').textContent = (el.getAttribute('data-merit-exam') || '') + ' · ' + (el.getAttribute('data-merit-year') || '');
+      document.getElementById('modal-merit-group').textContent = el.getAttribute('data-merit-group') || '';
+      document.getElementById('modal-merit-year').textContent = (el.getAttribute('data-merit-year') || '') + ' খ্রি.';
+      document.getElementById('modal-merit-inst').textContent = el.getAttribute('data-merit-inst') || 'উল্লেখ নেই';
+      document.getElementById('modal-merit-achv').textContent = el.getAttribute('data-merit-achv') || '';
+      meritModal.classList.remove('hidden');
+    });
+  });
+
+  var meritYearBtns = document.querySelectorAll('[data-merit-year-btn]');
+  var meritSearchInput = document.getElementById('merit-search-input');
+  var meritItems = document.querySelectorAll('[data-merit-item-year]');
+  var activeMeritYear = 'all';
+
+  function filterMeritItems() {
+    var q = meritSearchInput ? meritSearchInput.value.trim().toLowerCase() : '';
+    meritItems.forEach(function(item) {
+      var yr = item.getAttribute('data-merit-item-year') || '';
+      var hay = (item.getAttribute('data-merit-search') || '').toLowerCase();
+      var matchYear = activeMeritYear === 'all' || yr === activeMeritYear;
+      var matchQuery = !q || hay.indexOf(q) !== -1;
+      if (matchYear && matchQuery) {
+        item.classList.remove('hidden');
+      } else {
+        item.classList.add('hidden');
+      }
+    });
+  }
+
+  meritYearBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      activeMeritYear = btn.getAttribute('data-merit-year-btn') || 'all';
+      meritYearBtns.forEach(function(b) {
+        b.className = 'px-3 py-1.5 rounded-xl text-xs font-bold transition-colors bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer';
+      });
+      btn.className = 'px-3 py-1.5 rounded-xl text-xs font-bold transition-colors bg-emerald-900 text-white shadow-2xs cursor-pointer';
+      filterMeritItems();
+    });
+  });
+  if (meritSearchInput) {
+    meritSearchInput.addEventListener('input', filterMeritItems);
+  }
+
   // Academic Page Sub-Tabs
   var acadBtns = document.querySelectorAll('[data-acad-tab-btn]');
   var acadPanels = document.querySelectorAll('[data-acad-tab-panel]');
@@ -272,7 +324,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var grade = document.getElementById('adm-grade').value;
       var father = document.getElementById('adm-father').value;
       var mobile = document.getElementById('adm-mobile').value;
-      document.getElementById('slip-id').textContent = 'CHS-' + Math.floor(100000 + Math.random() * 900000);
+      document.getElementById('slip-id').textContent = '3583-' + new Date().getFullYear() + '-' + Math.floor(1000 + Math.random() * 9000);
       document.getElementById('slip-name').textContent = name;
       document.getElementById('slip-grade').textContent = grade;
       document.getElementById('slip-father').textContent = father;
@@ -292,4 +344,144 @@ document.addEventListener('DOMContentLoaded', function() {
       contactSuccess.classList.remove('hidden');
     });
   }
+
+  // About Page Campus Showcase Slider
+  var aboutSlides = document.querySelectorAll('[data-about-slide]');
+  var aboutDots = document.querySelectorAll('[data-about-dot]');
+  var aboutPrev = document.getElementById('about-prev-btn');
+  var aboutNext = document.getElementById('about-next-btn');
+  var currentAboutSlide = 0;
+
+  function showAboutSlide(index) {
+    if (!aboutSlides.length) return;
+    currentAboutSlide = (index + aboutSlides.length) % aboutSlides.length;
+    aboutSlides.forEach(function(sl, i) {
+      if (i === currentAboutSlide) {
+        sl.classList.remove('opacity-0', 'pointer-events-none');
+        sl.classList.add('opacity-100', 'z-10');
+      } else {
+        sl.classList.remove('opacity-100', 'z-10');
+        sl.classList.add('opacity-0', 'pointer-events-none');
+      }
+    });
+    aboutDots.forEach(function(dot, i) {
+      if (i === currentAboutSlide) {
+        dot.className = 'h-1.5 w-5 bg-amber-400 rounded-full transition-all cursor-pointer';
+      } else {
+        dot.className = 'h-1.5 w-1.5 bg-white/50 rounded-full transition-all cursor-pointer';
+      }
+    });
+  }
+
+  if (aboutSlides.length > 1) {
+    setInterval(function() {
+      showAboutSlide(currentAboutSlide + 1);
+    }, 5000);
+    if (aboutPrev) {
+      aboutPrev.addEventListener('click', function() {
+        showAboutSlide(currentAboutSlide - 1);
+      });
+    }
+    if (aboutNext) {
+      aboutNext.addEventListener('click', function() {
+        showAboutSlide(currentAboutSlide + 1);
+      });
+    }
+    aboutDots.forEach(function(dot) {
+      dot.addEventListener('click', function() {
+        var idx = parseInt(dot.getAttribute('data-about-dot') || '0', 10);
+        showAboutSlide(idx);
+      });
+    });
+  }
+
+  // About Page BANBEIS Dossier 4-Tab Switcher
+  var dossierTabBtns = document.querySelectorAll('[data-dossier-tab]');
+  var dossierPanels = document.querySelectorAll('[data-dossier-panel]');
+  dossierTabBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var target = btn.getAttribute('data-dossier-tab');
+      dossierTabBtns.forEach(function(b) {
+        if (b.getAttribute('data-dossier-tab') === target) {
+          b.className = 'inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold bg-[#004D38] text-white shadow-2xs cursor-pointer';
+        } else {
+          b.className = 'inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-100 hover:bg-slate-200 text-slate-700 cursor-pointer';
+        }
+      });
+      dossierPanels.forEach(function(panel) {
+        if (panel.getAttribute('data-dossier-panel') === target) {
+          panel.classList.remove('hidden');
+        } else {
+          panel.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  // Facilities Page Hero Photo Carousel
+  var facSlides = document.querySelectorAll('[data-fac-slide]');
+  var facDots = document.querySelectorAll('[data-fac-dot]');
+  var facPrev = document.getElementById('fac-prev-btn');
+  var facNext = document.getElementById('fac-next-btn');
+  var currentFacSlide = 0;
+
+  function showFacSlide(index) {
+    if (!facSlides.length) return;
+    currentFacSlide = (index + facSlides.length) % facSlides.length;
+    facSlides.forEach(function(sl, i) {
+      if (i === currentFacSlide) {
+        sl.classList.remove('opacity-0', 'pointer-events-none');
+        sl.classList.add('opacity-100', 'z-10');
+      } else {
+        sl.classList.remove('opacity-100', 'z-10');
+        sl.classList.add('opacity-0', 'pointer-events-none');
+      }
+    });
+    facDots.forEach(function(dot, i) {
+      if (i === currentFacSlide) {
+        dot.className = 'px-2.5 py-1 rounded-md text-[11px] font-bold bg-amber-400 text-slate-950 shadow-2xs transition-all cursor-pointer';
+      } else {
+        dot.className = 'px-2.5 py-1 rounded-md text-[11px] font-semibold bg-white/8 text-slate-300 hover:bg-white/15 hover:text-white transition-all cursor-pointer';
+      }
+    });
+  }
+
+  if (facSlides.length > 1) {
+    setInterval(function() {
+      showFacSlide(currentFacSlide + 1);
+    }, 6000);
+    if (facPrev) {
+      facPrev.addEventListener('click', function() {
+        showFacSlide(currentFacSlide - 1);
+      });
+    }
+    if (facNext) {
+      facNext.addEventListener('click', function() {
+        showFacSlide(currentFacSlide + 1);
+      });
+    }
+    facDots.forEach(function(dot) {
+      dot.addEventListener('click', function() {
+        var idx = parseInt(dot.getAttribute('data-fac-dot') || '0', 10);
+        showFacSlide(idx);
+      });
+    });
+  }
+
+  // Anti-Inspect & Source Code Protection Guard
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+  document.addEventListener('keydown', function(e) {
+    var key = (e.key || '').toUpperCase();
+    if (
+      e.keyCode === 123 || // F12
+      (e.ctrlKey && e.shiftKey && (key === 'I' || key === 'J' || key === 'C')) ||
+      (e.metaKey && e.altKey && (key === 'I' || key === 'J' || key === 'C' || key === 'U')) ||
+      ((e.ctrlKey || e.metaKey) && (key === 'U' || key === 'S'))
+    ) {
+      e.preventDefault();
+      return false;
+    }
+  });
 });

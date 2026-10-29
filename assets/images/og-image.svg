@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="url(#bg)" stroke="#f59e0b" stroke-width="4"/>
+  <circle cx="60" cy="60" r="48" fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <path d="M35 72 L60 58 L85 72 L85 44 L60 32 L35 44 Z" fill="#fef3c7" opacity="0.95"/>
+  <path d="M60 32 L60 58" stroke="#064e3b" stroke-width="2"/>
+  <circle cx="60" cy="24" r="6" fill="#ef4444"/>
+  <text x="60" y="92" font-family="serif" font-size="13" font-weight="bold" fill="#fde68a" text-anchor="middle">১৯৯৩</text>
+</svg>
